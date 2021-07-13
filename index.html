@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="scripts.js" defer></script>
+    <script src="simpleImage.js" defer></script>
+    <title>Mini Project</title>
+  </head>
+  <body>
+    <div id="content">
+      <div>
+        <h1>Filter Fun</h1>
+      </div>
+      <div>
+        <canvas id="canvas"> </canvas>
+      </div>
+      <div>
+        <h2>Load Image</h2>
+      </div>
+      <div>
+        <input
+          id="imageFile"
+          type="file"
+          multiple="false"
+          accept="image/*"
+          onchange="loadImage()"
+        />
+      </div>
+      <div>
+        <h2>Choose Filter</h2>
+      </div>
+      <div>
+        <input type="button" value="Gray" onclick="makeGray()" />
+        <input type="button" value="Red" onclick="makeRed()" />
+        <input type="button" value="Time Machine" onclick="timeMachine()" />
+        <input type="button" value="Rainbow" onclick="makeRainbow()" />
+      </div>
+      <hr />
+      <div>
+        <input type="button" value="Reset Filter" onclick="reset()" />
+        <input type="button" value="Clear Canvas" onclick="clearCanvas()" />
+        <input type="button" value="Test" onclick="test()" />
+      </div>
+    </div>
+  </body>
+</html>

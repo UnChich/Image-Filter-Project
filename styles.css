@@ -1,0 +1,8 @@
+#content {
+  margin-left: 20px;
+}
+
+canvas {
+  width: 400px;
+  border: #000 1px solid;
+}
